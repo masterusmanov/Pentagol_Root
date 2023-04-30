@@ -18,7 +18,7 @@ import {HandlebarsAdapter} from '@nestjs-modules/mailer/dist/adapters/handlebars
           }
         },
         defaults:{
-          from: `"elektronika_savdo_dukoni" <${config.get('MAILER_HOST')}>`
+          from: `"pentagoal" <${config.get('MAILER_HOST')}>`
         },
         template:{
           dir: join(__dirname, 'templates'),

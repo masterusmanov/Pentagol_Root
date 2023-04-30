@@ -10,7 +10,7 @@ export class MailService {
     console.log(url);
     await this.mailerService.sendMail({
       to: admin.email,
-      subject: 'Welcome to Electronics store App! Confirm your Email',
+      subject: 'Welcome to Pentagol Admin store App! Confirm your Email',
       template: './confirmation',
       context: {
         name: admin.first_name,

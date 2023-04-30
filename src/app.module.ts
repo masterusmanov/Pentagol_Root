@@ -16,6 +16,7 @@ import { TeamResults } from "./team_results/models/team_results.model";
 import { MailService } from "./mail/mail.service";
 import { JwtModule } from "@nestjs/jwt";
 import { AdminModule } from './admin/admin.module';
+import { Admin } from "./admin/models/admin.model";
 
 
 @Module({
@@ -31,7 +32,7 @@ import { AdminModule } from './admin/admin.module';
             username: process.env.POSTGRES_USER,
             password: String(process.env.POSTGRES_PASSWORD),
             database: process.env.POSTGRES_DB,
-            models: [News, League, TeamName, ResultsAftergame, TeamResults],
+            models: [News, League, TeamName, ResultsAftergame, TeamResults, Admin],
             autoLoadModels: true,
             logging: false
         }),

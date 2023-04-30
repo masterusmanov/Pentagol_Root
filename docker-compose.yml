@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   postgres:
-    container_name: elektronika_savdo_dukoni_db
+    container_name: pentagol_db
     image: postgres:14.0-alpine
     restart: always
     environment:
@@ -15,7 +15,7 @@ services:
       - "${POSTGRES_LOCAL_PORT}:${POSTGRES_PORT}"
       
   app:
-    container_name: elektronika_savdo_dukoni
+    container_name: pentagol
     build:
       context: ./
     depends_on:
